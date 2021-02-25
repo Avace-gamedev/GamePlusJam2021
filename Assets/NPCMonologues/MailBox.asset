@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75da3f74fe672449adbc2e4244af393, type: 3}
+  m_Name: MailBox
+  m_EditorClassIdentifier: 
+  text:
+  - '<i>1 letter is hanging from the box.</i>
+
+
+    Do YOU want to make 9.999.999$
+    per day?!!...'
+  - With this <b>SIMPLE</b> trick, you can join the 1% while working from home...
