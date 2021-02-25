@@ -9310,7 +9310,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1617192869}
-        m_MethodName: BroadcastOnMelee
+        m_MethodName: BroadcastOnSpell1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9325,7 +9325,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1617192869}
-        m_MethodName: BroadcastOnRanged
+        m_MethodName: BroadcastOnSpell2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9337,6 +9337,36 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9b288835-3743-4f09-9d78-3b4300f82a61
     m_ActionName: Player/Ranged[/Keyboard/space,/XInputControllerWindows/rightTrigger]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1617192869}
+        m_MethodName: BroadcastOnSpell3
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 32925b69-cf73-49d3-9c36-a70534f1cbbf
+    m_ActionName: Player/Spell3[/Keyboard/e,/XInputControllerWindows/buttonNorth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1617192869}
+        m_MethodName: BroadcastOnSpell4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f6f8e150-1756-44b4-990c-63b6ea1d3f6f
+    m_ActionName: Player/Spell4[/Keyboard/r,/XInputControllerWindows/buttonEast]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -9375,10 +9405,16 @@ MonoBehaviour:
   _OnInteract:
     m_PersistentCalls:
       m_Calls: []
-  _OnMelee:
+  _OnSpell1:
     m_PersistentCalls:
       m_Calls: []
-  _OnRanged:
+  _OnSpell2:
+    m_PersistentCalls:
+      m_Calls: []
+  _OnSpell3:
+    m_PersistentCalls:
+      m_Calls: []
+  _OnSpell4:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1628160970
@@ -33708,6 +33744,29 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 7307487376611715759, guid: 8eac28ba00c636f479d44e70ea256d4f,
+        type: 3}
+      propertyPath: spells.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307487376611715759, guid: 8eac28ba00c636f479d44e70ea256d4f,
+        type: 3}
+      propertyPath: spells.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e11daef5eece244489609c61ffa56289,
+        type: 2}
+    - target: {fileID: 7307487376611715759, guid: 8eac28ba00c636f479d44e70ea256d4f,
+        type: 3}
+      propertyPath: spells.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: f68896a2c93106f4693751ba33f8c8e7,
+        type: 2}
+    - target: {fileID: 7307487376611715759, guid: 8eac28ba00c636f479d44e70ea256d4f,
+        type: 3}
+      propertyPath: spells.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 222d72e882ed856468f186822bea9216,
+        type: 2}
     - target: {fileID: 8211920140745204899, guid: 8eac28ba00c636f479d44e70ea256d4f,
         type: 3}
       propertyPath: m_RootOrder
@@ -33778,7 +33837,9 @@ PrefabInstance:
       propertyPath: nOrientations
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6803381601954844256, guid: 8eac28ba00c636f479d44e70ea256d4f, type: 3}
+    - {fileID: 6886797111772241793, guid: 8eac28ba00c636f479d44e70ea256d4f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8eac28ba00c636f479d44e70ea256d4f, type: 3}
 --- !u!1001 &8771089977527501346
 PrefabInstance:

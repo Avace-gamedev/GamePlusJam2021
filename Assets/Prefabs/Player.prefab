@@ -67,7 +67,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2344290054955264908}
   - component: {fileID: 4744372766833509042}
-  - component: {fileID: 2353242603575858804}
   m_Layer: 0
   m_Name: Spell
   m_TagString: Untagged
@@ -140,46 +139,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2353242603575858804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3076076193922682555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02bc269e5a9554f4c899842a617c7dfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnDisableCallback:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6886797111772241793}
-        m_MethodName: SpawnBullet
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnEnableCallback:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6803381601954844256}
-        m_MethodName: Hit
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &7742880692103632446
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +150,7 @@ GameObject:
   - component: {fileID: 3597352503932510693}
   - component: {fileID: 4187055239669905749}
   - component: {fileID: 6967324688773388144}
+  - component: {fileID: 5859502813908730343}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -283,6 +243,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5859502813908730343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7742880692103632446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02bc269e5a9554f4c899842a617c7dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orientation: {x: 0, y: 0, z: 0}
+  intCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7307487376611715759}
+        m_MethodName: Hit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7870131495481363959
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,8 +373,8 @@ GameObject:
   - component: {fileID: 3202834980154976248}
   - component: {fileID: 9070264482981432236}
   - component: {fileID: 5174427929747345745}
-  - component: {fileID: 6803381601954844256}
-  - component: {fileID: 6886797111772241793}
+  - component: {fileID: 1656569549078921223}
+  - component: {fileID: 7307487376611715759}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -465,7 +452,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.15}
   m_Size: {x: 0.22, y: 0.3}
   m_Direction: 0
---- !u!114 &6803381601954844256
+--- !u!114 &1656569549078921223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -474,9 +461,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 8211920140745204901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4b71110dadd2ae449e0fc1da78b1831, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a14e561a96de3c4b94e348427b12447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxHealth: 5
+  hitSound: {fileID: 0}
+  healSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  fullHealthSound: {fileID: 0}
+  OnHealthChange:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFullHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7307487376611715759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211920140745204901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92377406752524438ed40d405b44f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spells: []
   animator: {fileID: 6967324688773388144}
   movementSystem: {fileID: 9070264482981432236}
   perOrientationCollider:
@@ -484,28 +498,7 @@ MonoBehaviour:
   - {fileID: 4243055377596610823}
   - {fileID: 7149652944781523930}
   - {fileID: 4962304345450246299}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  firerate: 1
-  maxTargets: 10
---- !u!114 &6886797111772241793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8211920140745204901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97690766684138e4fa89b93faca047c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firerate: 1
-  pfBullet: {fileID: 2665014354068692372, guid: 71aa87674554969409183c8ed604aa9c,
-    type: 3}
-  animator: {fileID: 6967324688773388144}
-  movementSystem: {fileID: 9070264482981432236}
+  trSpell: {fileID: 2344290054955264908}
 --- !u!1 &9008722699091812621
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,91 @@
 fileFormatVersion: 2
 guid: a676d3cabaa14684caa95d9bc82571f4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1712959282401565978
+    second: character_heal_0
+  - first:
+      213: 5746968565335247223
+    second: character_heal_1
+  - first:
+      213: 3790538014963424647
+    second: character_heal_2
+  - first:
+      213: -9007283324366271850
+    second: character_heal_3
+  - first:
+      213: 8890224335912153606
+    second: character_heal_4
+  - first:
+      213: 2248937590623153784
+    second: character_heal_5
+  - first:
+      213: -881362918184015744
+    second: character_heal_6
+  - first:
+      213: -8821332863159299328
+    second: character_heal_7
+  - first:
+      213: 713654382855232046
+    second: character_heal_8
+  - first:
+      213: 2808377081620868955
+    second: character_heal_9
+  - first:
+      213: -7216781919128547782
+    second: character_heal_10
+  - first:
+      213: -1792535124830108863
+    second: character_heal_11
+  - first:
+      213: -6929695807352061760
+    second: character_heal_12
+  - first:
+      213: 7982923482121554675
+    second: character_heal_13
+  - first:
+      213: -5062570206918543514
+    second: character_heal_14
+  - first:
+      213: -3654572020886167147
+    second: character_heal_15
+  - first:
+      213: -2631565167640134918
+    second: character_heal_16
+  - first:
+      213: 2925755107790867591
+    second: character_heal_17
+  - first:
+      213: 4696217345456384310
+    second: character_heal_18
+  - first:
+      213: 3079056898591786850
+    second: character_heal_19
+  - first:
+      213: 430062357680857114
+    second: character_heal_20
+  - first:
+      213: -3629103306889813342
+    second: character_heal_21
+  - first:
+      213: 6368511015145092075
+    second: character_heal_22
+  - first:
+      213: 5095089302696152344
+    second: character_heal_23
+  - first:
+      213: -4560083363525172067
+    second: character_heal_24
+  - first:
+      213: -1770995566142914823
+    second: character_heal_25
+  - first:
+      213: 4972060817190826862
+    second: character_heal_26
+  - first:
+      213: -5222823646984745769
+    second: character_heal_27
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +115,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +124,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +148,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +181,595 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: character_heal_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 98
+        width: 13
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e22fb9bb985a38e0800000000000000
+      internalID: -1712959282401565978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 97
+        width: 12
+        height: 21
+      alignment: 9
+      pivot: {x: 0.45833334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779c420267551cf40800000000000000
+      internalID: 5746968565335247223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 96
+        width: 13
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.045454547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d5281dd32ba9430800000000000000
+      internalID: 3790538014963424647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 97
+        width: 12
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5416667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a49d30a83bff280800000000000000
+      internalID: -9007283324366271850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 97
+        width: 12
+        height: 21
+      alignment: 9
+      pivot: {x: 0.45833334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602b39b5eeb606b70800000000000000
+      internalID: 8890224335912153606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 97
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ead13c2d4d53f10800000000000000
+      internalID: 2248937590623153784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_6
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 97
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088a0777815c4c3f0800000000000000
+      internalID: -881362918184015744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 11
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00319e59f74549580800000000000000
+      internalID: -8821332863159299328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 66
+        width: 11
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a9c7e41e867e900800000000000000
+      internalID: 713654382855232046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_9
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 64
+        width: 11
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.045454547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f2c59831c59f620800000000000000
+      internalID: 2808377081620868955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 65
+        width: 11
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e81e8a417d8db90800000000000000
+      internalID: -7216781919128547782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 65
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.42307693, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143471d1dc2af17e0800000000000000
+      internalID: -1792535124830108863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 65
+        width: 11
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c04449d066c4df90800000000000000
+      internalID: -6929695807352061760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 65
+        width: 11
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3facaf49c9a09ce60800000000000000
+      internalID: 7982923482121554675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 13
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667f42e28332eb9b0800000000000000
+      internalID: -5062570206918543514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 34
+        width: 12
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5416667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591aff81c1a584dc0800000000000000
+      internalID: -3654572020886167147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 33
+        width: 11
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afab4833c6dca7bd0800000000000000
+      internalID: -2631565167640134918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_17
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 33
+        width: 12
+        height: 21
+      alignment: 9
+      pivot: {x: 0.45833334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cc8abe4ce5a9820800000000000000
+      internalID: 2925755107790867591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 33
+        width: 12
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5416667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639a4f74bc05c2140800000000000000
+      internalID: 4696217345456384310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_19
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 33
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26787cb8fe10bba20800000000000000
+      internalID: 3079056898591786850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_20
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 33
+        width: 12
+        height: 21
+      alignment: 9
+      pivot: {x: 0.45833334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10a5dc8f63e7f500800000000000000
+      internalID: 430062357680857114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 11
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a223ab25c5d2adc0800000000000000
+      internalID: -3629103306889813342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_22
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2
+        width: 11
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3b2e5c60f716850800000000000000
+      internalID: 6368511015145092075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_23
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 11
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.045454547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dc812d9b465b640800000000000000
+      internalID: 5095089302696152344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1
+        width: 11
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94e9ea575457b0c0800000000000000
+      internalID: -4560083363525172067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_25
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1
+        width: 13
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5769231, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe724d6ae82c67e0800000000000000
+      internalID: -1770995566142914823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_26
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1
+        width: 11
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e633c4a58fe400540800000000000000
+      internalID: 4972060817190826862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_heal_27
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1
+        width: 11
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcc6f4909dc487b0800000000000000
+      internalID: -5222823646984745769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

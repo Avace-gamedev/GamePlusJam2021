@@ -22,7 +22,7 @@
                     "interactions": "Tap"
                 },
                 {
-                    "name": "Melee",
+                    "name": "Spell1",
                     "type": "Button",
                     "id": "ffc196d1-3d04-4571-82ab-f5e268a0a896",
                     "expectedControlType": "Button",
@@ -30,9 +30,25 @@
                     "interactions": "Tap"
                 },
                 {
-                    "name": "Ranged",
+                    "name": "Spell2",
                     "type": "Button",
                     "id": "9b288835-3743-4f09-9d78-3b4300f82a61",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap"
+                },
+                {
+                    "name": "Spell3",
+                    "type": "Button",
+                    "id": "32925b69-cf73-49d3-9c36-a70534f1cbbf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap"
+                },
+                {
+                    "name": "Spell4",
+                    "type": "Button",
+                    "id": "f6f8e150-1756-44b4-990c-63b6ea1d3f6f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Tap"
@@ -51,7 +67,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "WASD",
+                    "name": "Arrow Keys",
                     "id": "00ca640b-d935-4593-8157-c05846ea39b3",
                     "path": "Dpad",
                     "interactions": "",
@@ -63,30 +79,8 @@
                 },
                 {
                     "name": "up",
-                    "id": "e2062cb9-1b15-46a2-838c-2f8d72a0bdd9",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "up",
                     "id": "8180e8bd-4097-4f4e-ab88-4523101a6ce9",
                     "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "320bffee-a40b-4347-ac70-c210eb8bc73a",
-                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -107,30 +101,8 @@
                 },
                 {
                     "name": "left",
-                    "id": "d2581a9b-1d11-4566-b27d-b92aff5fabbc",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
                     "id": "2e46982e-44cc-431b-9f0b-c11910bf467a",
                     "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "fcfe95b8-67b9-4526-84b5-5d0bc98d6400",
-                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -174,7 +146,7 @@
                 {
                     "name": "",
                     "id": "d162206a-2412-467b-b9a0-4affef00303a",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/enter",
                     "interactions": "Tap",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -196,11 +168,11 @@
                 {
                     "name": "",
                     "id": "8fb27926-6b8c-48a1-8b49-f9d32bb257fd",
-                    "path": "<Keyboard>/f",
+                    "path": "<Keyboard>/q",
                     "interactions": "Tap",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Melee",
+                    "action": "Spell1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -211,18 +183,18 @@
                     "interactions": "Tap",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Melee",
+                    "action": "Spell1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "cd04d660-635b-49f0-ae30-d6b4d47e42f2",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/w",
                     "interactions": "Tap",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Ranged",
+                    "action": "Spell2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -233,7 +205,51 @@
                     "interactions": "Tap",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Ranged",
+                    "action": "Spell2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3a7658c-2bb0-492e-be58-eef9f2fc2736",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Spell3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "54c27a29-e4f5-49c4-9dec-0b240977d9cb",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Spell3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ec3a817-b7f4-410f-b832-d4c622f45e4d",
+                    "path": "<Keyboard>/r",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Spell4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4b96551-453e-4a96-aa7e-2d20f4df6e05",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Spell4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

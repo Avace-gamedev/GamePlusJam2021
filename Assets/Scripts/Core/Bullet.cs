@@ -6,11 +6,13 @@ public class Bullet : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float bulletSpeed = 100;
     [SerializeField] float lifespan = 5f;
-    [SerializeField] LayerMask targetLayer;
     [SerializeField] LayerMask obstacleLayer;
 
-    public void Shoot(Vector3 direction)
+    LayerMask targetLayer;
+
+    public void Shoot(Vector3 direction, LayerMask targetLayer)
     {
+        this.targetLayer = targetLayer;
         Vector3 dirNormalized = direction.normalized;
         float angle = Mathf.Atan2(dirNormalized.y, dirNormalized.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angle);

@@ -59,14 +59,14 @@ public class MovementSystem : MonoBehaviour
     {
         if (moving && movementsEnabled)
         {
-            Vector2 dir = GetDirection(orientation);
+            Vector2 dir = DirectionOfOrientation(orientation);
             SetVelocity(dir * speed * 50 * Time.fixedDeltaTime);
         }
         else
             SetVelocity(Vector3.zero);
     }
 
-    Vector2 GetDirection(int orientation)
+    public Vector2 DirectionOfOrientation(int orientation)
     {
         float angle = (float)orientation / (float)nOrientations * 2 * Mathf.PI;
         return new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
