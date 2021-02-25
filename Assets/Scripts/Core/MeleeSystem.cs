@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class MeleeSystem : MonoBehaviour
 {
-    [SerializeField] [Range(0.1f, 5)] float firerate = 1f;
     [SerializeField] Animator animator;
     [SerializeField] MovementSystem movementSystem;
+    [SerializeField] Collider2D[] perOrientationCollider;
+    [SerializeField] LayerMask targetLayer;
+
+    [Header("Weapon")]
+    [SerializeField] [Range(0.1f, 5)] float firerate = 1f;
+    [SerializeField] [Range(1, 50)] int maxTargets = 10;
 
     float firerateTimer = -1;
     bool doMelee = false;
     bool movementDisabled = false;
+    bool waitingForAnimation = false;
 
     void Start()
     {
@@ -36,8 +42,28 @@ public class MeleeSystem : MonoBehaviour
                 doMelee = false;
                 movementSystem.DisableMovements();
                 movementDisabled = true;
+                waitingForAnimation = true;
             }
         }
+    }
+
+    public void Hit(Vector3 position, Vector3 direction)
+    {
+        if (!waitingForAnimation) return;
+
+        Collider2D collider = perOrientationCollider[movementSystem.orientation];
+
+        Collider2D[] enemies = new Collider2D[maxTargets];
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(targetLayer);
+
+        int n = collider.OverlapCollider(filter, enemies);
+        for (int i = 0; i < n; i++)
+        {
+            Debug.Log("hit " + enemies[i]);
+        }
+
+        waitingForAnimation = false;
     }
 
     void OnMelee(bool b)

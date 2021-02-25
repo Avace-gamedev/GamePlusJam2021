@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 259304565}
   - component: {fileID: 259304564}
   - component: {fileID: 259304563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Objects Under Building (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2749,7 +2749,7 @@ GameObject:
   - component: {fileID: 340155765}
   - component: {fileID: 340155764}
   - component: {fileID: 340155763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3087,7 +3087,7 @@ GameObject:
   - component: {fileID: 478262953}
   - component: {fileID: 478262955}
   - component: {fileID: 478262954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Objects Over Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4144,7 +4144,7 @@ GameObject:
   - component: {fileID: 1316113427}
   - component: {fileID: 1316113426}
   - component: {fileID: 1316113425}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Objects Under Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5317,7 +5317,7 @@ GameObject:
   - component: {fileID: 1525520676}
   - component: {fileID: 1525520675}
   - component: {fileID: 1525520674}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6200,7 +6200,7 @@ GameObject:
   - component: {fileID: 1607318226}
   - component: {fileID: 1607318228}
   - component: {fileID: 1607318227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

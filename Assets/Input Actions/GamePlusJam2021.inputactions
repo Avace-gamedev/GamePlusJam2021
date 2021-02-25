@@ -175,7 +175,7 @@
                     "name": "",
                     "id": "d162206a-2412-467b-b9a0-4affef00303a",
                     "path": "<Keyboard>/e",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Interact",

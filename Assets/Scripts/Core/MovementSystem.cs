@@ -11,7 +11,6 @@ public class MovementSystem : MonoBehaviour
     [Header("Movement")]
     [Range(0, 20)]
     [SerializeField] float speed = 1;
-    [SerializeField] bool lockMovementToOrientation = false;
 
     [Header("Animations")]
     [SerializeField] Animator animator;
@@ -23,8 +22,7 @@ public class MovementSystem : MonoBehaviour
     Rigidbody2D rb;
     float initialDrag;
     bool moving;
-    Vector2 moveDir;
-    int orientation;
+    public int orientation { get; private set; }
     bool movementsEnabled = true;
 
     void Awake()
@@ -36,7 +34,6 @@ public class MovementSystem : MonoBehaviour
     void Start()
     {
         InputManager.OnMove.AddListener(OnMove);
-        InputManager.OnMove.AddListener(OnLook);
     }
 
     public void SetVelocity(Vector3 velocity)
@@ -62,7 +59,7 @@ public class MovementSystem : MonoBehaviour
     {
         if (moving && movementsEnabled)
         {
-            Vector2 dir = lockMovementToOrientation ? GetDirection(orientation) : moveDir;
+            Vector2 dir = GetDirection(orientation);
             SetVelocity(dir * speed * 50 * Time.fixedDeltaTime);
         }
         else
@@ -95,42 +92,39 @@ public class MovementSystem : MonoBehaviour
     {
         if (!movementsEnabled) return;
 
-        moveDir = move;
+        if (move.magnitude > 0)
+        {
+            float angle = Mathf.Atan2(move.y, move.x);
+            angle = angle < 0 ? angle + 2 * Mathf.PI : angle;
 
-        if (animator)
-            if (move.magnitude > 0)
+            if (angle <= Mathf.PI / nOrientations || angle > 2 * Mathf.PI - Mathf.PI / nOrientations)
+                SetOrientation(0);
+            else
+                SetOrientation((int)Mathf.Ceil(0.5f * (angle * nOrientations / Mathf.PI - 1)));
+
+            if (!moving)
             {
                 moving = true;
-                animator.SetBool("running", true);
                 if (footstepSound)
                 {
                     StopAllCoroutines();
                     StartCoroutine(PlayFootstepSound());
                 }
+                if (animator)
+                    animator.SetBool("running", true);
             }
-            else
+        }
+        else
+        {
+            if (moving)
             {
                 moving = false;
-                animator.SetBool("running", false);
                 StopAllCoroutines();
+                if (animator)
+                    animator.SetBool("running", false);
             }
-    }
 
-    public void OnLook(Vector2 look)
-    {
-        if (!movementsEnabled) return;
-
-        if (look.magnitude == 0) return;
-
-        float angle = Mathf.Atan2(look.y, look.x);
-        angle = angle < 0 ? angle + 2 * Mathf.PI : angle;
-
-        if (angle <= Mathf.PI / nOrientations || angle > 2 * Mathf.PI - Mathf.PI / nOrientations)
-            SetOrientation(0);
-        else
-            SetOrientation((int)Mathf.Ceil(0.5f * (angle * nOrientations / Mathf.PI - 1)));
-
-
+        }
     }
 
     void SetOrientation(int _orientation)

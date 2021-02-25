@@ -17,6 +17,21 @@ TextureImporter:
   - first:
       213: -4005498966375450926
     second: wind_spell_4
+  - first:
+      213: 4001878805145513601
+    second: wind_spell_5
+  - first:
+      213: -3802458794676847118
+    second: wind_spell_6
+  - first:
+      213: 6616650382334743747
+    second: wind_spell_7
+  - first:
+      213: -8368094135627126310
+    second: wind_spell_8
+  - first:
+      213: 8129594958234108396
+    second: wind_spell_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,7 +133,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 64
         width: 38
         height: 16
       alignment: 6
@@ -139,7 +154,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 38
-        y: 0
+        y: 64
         width: 38
         height: 16
       alignment: 6
@@ -160,7 +175,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 76
-        y: 0
+        y: 64
         width: 38
         height: 16
       alignment: 6
@@ -181,7 +196,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 114
-        y: 0
+        y: 64
         width: 38
         height: 16
       alignment: 6
@@ -202,7 +217,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 152
-        y: 0
+        y: 64
         width: 38
         height: 16
       alignment: 6
@@ -214,6 +229,111 @@ TextureImporter:
       bones: []
       spriteID: 2d63ff089eb9968c0800000000000000
       internalID: -4005498966375450926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_spell_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 38
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18eecd60297898730800000000000000
+      internalID: 4001878805145513601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_spell_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 38
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdf93e5fd3fa3bc0800000000000000
+      internalID: -3802458794676847118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_spell_7
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 38
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4d30a577013db50800000000000000
+      internalID: 6616650382334743747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_spell_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 38
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad96aee38be8edb80800000000000000
+      internalID: -8368094135627126310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wind_spell_9
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 38
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1c955ca8f12d070800000000000000
+      internalID: 8129594958234108396
       vertices: []
       indices: 
       edges: []
