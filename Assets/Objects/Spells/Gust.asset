@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176510059b432e344a1c43f7825e3a5d, type: 3}
   m_Name: Gust
   m_EditorClassIdentifier: 
+  name: GUST
+  type: 0
   animatorTrigger: melee
   firerate: 1
   castSound: {fileID: 0}

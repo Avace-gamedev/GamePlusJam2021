@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a87a6895ff716041babe243074470b5, type: 3}
-  m_Name: Heal
+  m_Script: {fileID: 11500000, guid: d8556fd52c5be8749a53e3ea7a21a89f, type: 3}
+  m_Name: Stoneskin
   m_EditorClassIdentifier: 
-  name: HEAL
-  type: 3
-  animatorTrigger: heal
-  firerate: 0.1
+  name: Stoneskin
+  type: 2
+  animatorTrigger: shield
+  firerate: 1
   castSound: {fileID: 0}
   hitSound: {fileID: 0}
-  healAmount: 1

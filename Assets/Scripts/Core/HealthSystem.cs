@@ -23,6 +23,7 @@ public class HealthSystem : MonoBehaviour
     public UnityEvent OnDeath = new UnityEvent();
 
     public float health { get; private set; }
+    float tempDamageMultiplier = -1;
 
     void Awake()
     {
@@ -31,11 +32,14 @@ public class HealthSystem : MonoBehaviour
 
     void ChangeHealth(float damage)
     {
-        health = Mathf.Min(Mathf.Max(0, health - damage), maxHealth);
+        float actualDamage = damage * tempDamageMultiplier;
+        if (actualDamage == 0) return;
+
+        health = Mathf.Min(Mathf.Max(0, health - actualDamage), maxHealth);
 
         OnHealthChange.Invoke(health);
 
-        if (damage > 0)
+        if (actualDamage > 0)
         {
             // hit
             if (hitSound)
@@ -76,5 +80,17 @@ public class HealthSystem : MonoBehaviour
             Debug.LogWarning("Hitting with a negative damage, ignored");
         else
             ChangeHealth(damage);
+    }
+
+    public void SetTemporaryDamageMultiplier(float multiplier)
+    {
+        tempDamageMultiplier = multiplier;
+    }
+
+    public void CancelTemporaryDamageMultiplier()
+    {
+        if (tempDamageMultiplier < 0) return;
+
+        tempDamageMultiplier = -1;
     }
 }

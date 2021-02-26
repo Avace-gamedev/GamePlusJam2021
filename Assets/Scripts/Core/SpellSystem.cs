@@ -9,6 +9,10 @@ public class SpellSystem : MonoBehaviour
     [SerializeField] MovementSystem movementSystem;
     [SerializeField] Collider2D[] perOrientationCollider;
     [SerializeField] Transform trSpell;
+    [SerializeField] UISpell[] uiSpells;
+    [SerializeField] string[] spellKeys;
+    [SerializeField] Sprite[] spellGamepadImages;
+    [SerializeField] Sprite[] spellTypeIcons;
 
     float[] firerateTimer;
     bool[] trigger;
@@ -24,10 +28,16 @@ public class SpellSystem : MonoBehaviour
         {
             trigger[i] = false;
             firerateTimer[i] = -1;
+            spells[i].Setup(this);
+            if (i < uiSpells.Length && i < spellKeys.Length && i < spellGamepadImages.Length)
+                if ((int)spells[i].type < spellTypeIcons.Length)
+                    uiSpells[i].Load(spells[i], spellKeys[i], spellGamepadImages[i], spellTypeIcons[(int)spells[i].type]);
+                else
+                    uiSpells[i].Load(spells[i], spellKeys[i], spellGamepadImages[i]);
         }
 
-        foreach (Spell spell in spells)
-            spell.Setup(this);
+        for (int i = spells.Length; i < uiSpells.Length; i++)
+            uiSpells[i].gameObject.SetActive(false);
     }
 
     void Start()
@@ -38,24 +48,37 @@ public class SpellSystem : MonoBehaviour
         InputManager.OnSpell4.AddListener((b) => OnSpell(3, b));
     }
 
-    void FixedUpdate()
+    void Update()
     {
+        for (int i = 0; i < spells.Length; i++)
+            if (firerateTimer[i] >= 0)
+                firerateTimer[i] -= Time.deltaTime;
+
         if (casting >= 0)
         {
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Running"))
             {
                 movementSystem.EnableMovements();
+
+                for (int i = 0; i < uiSpells.Length; i++)
+                    if (i != casting)
+                        uiSpells[i].Enable();
+
+                spells[casting].OnCastEnd();
                 casting = -1;
             }
             else
+            {
+                for (int j = 0; j < uiSpells.Length; j++)
+                    if (j != casting) // disable spells until end of cast
+                        uiSpells[j].Disable();
                 return;
+            }
         }
 
         for (int i = 0; i < spells.Length; i++)
         {
-            if (firerateTimer[i] >= 0)
-                firerateTimer[i] -= Time.fixedDeltaTime;
-            else if (trigger[i])
+            if (firerateTimer[i] < 0 && trigger[i])
             {
                 Cast(i);
 
@@ -70,12 +93,16 @@ public class SpellSystem : MonoBehaviour
 
     void Cast(int i)
     {
+        spells[i].OnCast();
+
         if (spells[i].castSound)
             AudioSystem.sfxSource.PlayOneShot(spells[i].castSound);
 
         animator.SetTrigger(spells[i].animatorTrigger);
         firerateTimer[i] = 1 / spells[i].firerate;
         trigger[i] = false;
+        if (i < uiSpells.Length)
+            uiSpells[i].StartCooldown(firerateTimer[i]);
         movementSystem.DisableMovements();
         casting = i;
         waitingForAnimation = true;
